@@ -1,0 +1,4 @@
+# Ignore specific large files
+Library/ArtifactDB
+Library/PackageCache/com.unity.burst@1.8.10/.Runtime/libburst-llvm-15.dylib
+Library/PackageCache/com.unity.toolchain.win-x86_64-linux-x86_64@2.0.9/data~/payload.tar.7z
