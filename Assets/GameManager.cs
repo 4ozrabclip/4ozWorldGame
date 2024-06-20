@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
             if(Input.GetKeyDown(KeyCode.Return)){
                 SendMessageToChat("You: " + chatBox.text, Message.MessageType.playerMessage);
                 chatBox.text = "";
+                chatBox.DeactivateInputField();
             }
         }
         else{
@@ -28,12 +29,8 @@ public class GameManager : MonoBehaviour
                 chatBox.Select();
                 chatBox.ActivateInputField();
             }
-
         }
         if(!chatBox.isFocused){
-            if(Input.GetKeyDown(KeyCode.Space)){
-                SendMessageToChat("hello", Message.MessageType.info);
-            }
         }
         else{
             if(Input.GetKeyDown(KeyCode.Tab)){
